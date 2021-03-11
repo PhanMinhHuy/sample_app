@@ -3,11 +3,11 @@ vi:
   vietnamese: "Tiếng việt"
   title: "Ứng dụng mẫu Ruby on Rails"
   header:
-    sample_app: "Ứng dụng mẫu"
+    sample_app: "Sample app"
     home: "Trang chủ"
     help: "Trợ giúp"
     log_in: "Đăng nhập"
-  sign_up: "Đăng Ký ngay"
+  sign_up: "Đăng Ký"
   home:
     title: "Trang chủ"
     welcome_home_page: "Chào mừng đến với SAMPLE APP"
@@ -20,3 +20,15 @@ vi:
                   <a href='http://www.railstutorial.org/help'>Rails Tutorial help page</a>.
                   Để nhận trợ giúp về ứng dụng mẫu này, hãy xem
                   <a href='http://www.railstutorial.org/book'><em>Ruby on Rails Tutorial</em> book</a>.</p>"
+  flash:
+    sign_up_success: "Chào mừng đến với Sample App!"
+    not_found_user: "không tìm thấy user"
+  form:
+    user:
+      name: "Tên"
+      email: "Email"
+      password: "Mật Khẩu"
+      password_confirmation: "Xác nhận mật khẩu"
+    submit: "Tạo tài khoản"
+  error: "Lỗi"
+  error_messages: "Form này có chứa"

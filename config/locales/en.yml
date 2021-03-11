@@ -7,7 +7,7 @@ en:
     home: "Home"
     help: "Help"
     log_in: "Log in"
-  sign_up: "Sign up now"
+  sign_up: "Sign up"
   home:
     title: "Home"
     welcome_home_page: "Welcome to the Sample App"
@@ -21,3 +21,15 @@ en:
                   <a href='http://www.railstutorial.org/help'>Rails Tutorial help page</a>.
                   To get help on this sample app, see the
                   <a href='http://www.railstutorial.org/book'><em>Ruby on Rails Tutorial</em> book</a>.</p>"
+  flash:
+    sign_up_success: "Welcome to the Sample App!"
+    not_found_user: "Not found user"
+  form:
+    user:
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      password_confirmation: "Password confirmation"
+    submit: "Create my account"
+  error: "Error"
+  error_messages: "The form contains"
