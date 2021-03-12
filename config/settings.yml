@@ -6,3 +6,4 @@ user:
     regex: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   password:
     min_length: 6
+  gravatar_size: 80
