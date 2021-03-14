@@ -1,0 +1,7 @@
+<% provide(:title, t("users_page.title")) %>
+<h1><%= t "users_page.title" %></h1>
+<%= will_paginate previous_label: t("will_paginate.previous"), next_label: t("will_paginate.next") %>
+<ul class="users">
+  <%= render @users %>
+</ul>
+<%= will_paginate %>
