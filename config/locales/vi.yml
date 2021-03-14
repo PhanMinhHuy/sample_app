@@ -42,3 +42,4 @@ vi:
   log_in_page:
     title: "Đăng nhập"
     new_user?: "Chưa có tài khoản?"
+    remember_me: Nhớ tài khoản trên máy tính này?
