@@ -7,6 +7,12 @@ vi:
     home: "Trang chủ"
     help: "Trợ giúp"
     log_in: "Đăng nhập"
+    log_out: "Đăng xuất"
+    users: "Người dùng"
+    account: "Tài khoản"
+    profile: "Thông tin"
+    settings: "Cài đặt"
+    languages: "Ngôn ngữ"
   sign_up: "Đăng Ký"
   home:
     title: "Trang chủ"
@@ -23,6 +29,7 @@ vi:
   flash:
     sign_up_success: "Chào mừng đến với Sample App!"
     not_found_user: "không tìm thấy user"
+    invalid_sign_in: "Email hoặc mật khẩu không đúng"
   form:
     user:
       name: "Tên"
@@ -32,3 +39,6 @@ vi:
     submit: "Tạo tài khoản"
   error: "Lỗi"
   error_messages: "Form này có chứa"
+  log_in_page:
+    title: "Đăng nhập"
+    new_user?: "Chưa có tài khoản?"

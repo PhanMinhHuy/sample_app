@@ -7,6 +7,12 @@ en:
     home: "Home"
     help: "Help"
     log_in: "Log in"
+    log_out: "Log out"
+    users: "Users"
+    account: "Account"
+    profile: "Profile"
+    settings: "Settings"
+    languages: "Languages"
   sign_up: "Sign up"
   home:
     title: "Home"
@@ -24,6 +30,7 @@ en:
   flash:
     sign_up_success: "Welcome to the Sample App!"
     not_found_user: "Not found user"
+    invalid_sign_in: "Invalid email/password combination"
   form:
     user:
       name: "Name"
@@ -33,3 +40,6 @@ en:
     submit: "Create my account"
   error: "Error"
   error_messages: "The form contains"
+  log_in_page:
+    title: "Log in"
+    new_user?: "New user?"
