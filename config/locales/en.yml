@@ -43,3 +43,4 @@ en:
   log_in_page:
     title: "Log in"
     new_user?: "New user?"
+    remember_me: Remember me on this computer
