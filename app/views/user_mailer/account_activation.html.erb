@@ -1,4 +1,4 @@
-<h1><%= t "email.message" %></h1>
+<h1><%= t "email.activation_message" %></h1>
 <p><%= t "email.hi" %> <%= @user.name %>,</p>
-<p><%= t "email.content" %></p>
+<p><%= t "email.activation_content" %></p>
 <%= link_to t("email.activate"), edit_account_activation_url(id: @user.activation_token, email: @user.email) %>
