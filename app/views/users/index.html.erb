@@ -4,4 +4,4 @@
 <ul class="users">
   <%= render @users %>
 </ul>
-<%= will_paginate %>
+<%= will_paginate previous_label: t("will_paginate.previous"), next_label: t("will_paginate.next") %>
