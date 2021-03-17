@@ -43,6 +43,10 @@ en:
     password_reset_success: "Password has been reset."
     password_reset_expired: "Password reset has expired."
     not_found_email: "Email address not found"
+    create_micropost_success: "Micropost created!"
+    delete_micropost_success: "Micropost deleted"
+    delete_micropost_error: "Can't micropost"
+    can't_delete_micropost: "You can't delete that micropost"
   form:
     user:
       name: "Name"
@@ -52,13 +56,13 @@ en:
     submit: "Create my account"
   users_page:
     title: "All users"
-    confirm: "You sure?"
   edit_page:
     title: "Edit"
     submit_save: "Save changes"
     message: "Update your profile"
     change: "Change"
   delete: "Delete"
+  confirm: "You sure?"
   error:
     one: "The form contains 1 error"
     other: "The form contains %{count} error"
@@ -90,3 +94,16 @@ en:
     reset:
       title: "Reset password"
       submit: "Update password"
+  link_profile: "view my profile"
+  micropost:
+    type_message: "must be a valid image format"
+    size_message: "should be less than %{size}MB"
+    posted: "Posted"
+    ago: "ago."
+    placeholder: "Compose new micropost..."
+    submit: "Post"
+    alert_message: "Maximum file size is %{size}MB. Please choose a smaller file."
+    count:
+      one: "1 micropost"
+      other: "%{count} microposts"
+    feed: "Micropost feed"
