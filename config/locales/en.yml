@@ -35,6 +35,10 @@ en:
     user_deleted_success: "User deleted"
     user_deleted_error: "Can't deleted"
     please_log_in: "Please log in!"
+    activate_message: "Please check your email to activate your account"
+    activate_success: "Account activated!"
+    activate_error: "Invalid activation link"
+    account_not_activated: "Account not activated. Check your email for the activation link."
   form:
     user:
       name: "Name"
@@ -51,8 +55,9 @@ en:
     message: "Update your profile"
     change: "Change"
   delete: "Delete"
-  error: "Error"
-  error_messages: "The form contains"
+  error:
+    one: "The form contains 1 error"
+    other: "The form contains %{count} error"
   log_in_page:
     title: "Log in"
     new_user?: "New user?"
@@ -60,3 +65,10 @@ en:
   will_paginate:
     previous: "<"
     next: ">"
+  email:
+    title: "Account activation"
+    hi: "Hi"
+    to: "to@example.org"
+    message: "Sample App"
+    content: "Welcome to the Sample App! Click on the link below to activate your account:"
+    activate: "Activate"

@@ -5,7 +5,8 @@ class UsersController < ApplicationController
   before_action :admin_user, only: :destroy
 
   def index
-    @users = User.paginate page: params[:page]
+    @users = User.where_activated.paginate(page: params[:page],
+      per_page: params[:per_page] || Settings.user.page.limit)
   end
 
   def show; end
@@ -17,9 +18,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t "flash.sign_up_success"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t "flash.activate_message"
+      redirect_to root_path
     else
       render :new
     end
