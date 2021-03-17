@@ -31,6 +31,10 @@ en:
     sign_up_success: "Welcome to the Sample App!"
     not_found_user: "Not found user"
     invalid_sign_in: "Invalid email/password combination"
+    profile_updated: "Profile updated"
+    user_deleted_success: "User deleted"
+    user_deleted_error: "Can't deleted"
+    please_log_in: "Please log in!"
   form:
     user:
       name: "Name"
@@ -38,9 +42,21 @@ en:
       password: "Password"
       password_confirmation: "Password confirmation"
     submit: "Create my account"
+  users_page:
+    title: "All users"
+    confirm: "You sure?"
+  edit_page:
+    title: "Edit"
+    submit_save: "Save changes"
+    message: "Update your profile"
+    change: "Change"
+  delete: "Delete"
   error: "Error"
   error_messages: "The form contains"
   log_in_page:
     title: "Log in"
     new_user?: "New user?"
     remember_me: Remember me on this computer
+  will_paginate:
+    previous: "<"
+    next: ">"

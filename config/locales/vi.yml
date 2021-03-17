@@ -30,6 +30,10 @@ vi:
     sign_up_success: "Chào mừng đến với Sample App!"
     not_found_user: "không tìm thấy user"
     invalid_sign_in: "Email hoặc mật khẩu không đúng"
+    profile_updated: "Cập nhật thành công"
+    user_deleted_success: "Xóa thành công"
+    user_deleted_error: "Không thể xóa"
+    please_log_in: "Bạn chưa đăng nhập!"
   form:
     user:
       name: "Tên"
@@ -37,9 +41,21 @@ vi:
       password: "Mật Khẩu"
       password_confirmation: "Xác nhận mật khẩu"
     submit: "Tạo tài khoản"
+  users_page:
+    title: "Danh sách tài khoản"
+    confirm: "Bạn chắc chưa?"
+  edit_page:
+    title: "Chỉnh sửa"
+    submit_save: "Lưu thay đổi"
+    message: "Cập nhật thông tin của bạn"
+    change: "Thay đổi"
+  delete: "Xóa"
   error: "Lỗi"
   error_messages: "Form này có chứa"
   log_in_page:
     title: "Đăng nhập"
     new_user?: "Chưa có tài khoản?"
     remember_me: Nhớ tài khoản trên máy tính này?
+  will_paginate:
+    previous: "<"
+    next: ">"
