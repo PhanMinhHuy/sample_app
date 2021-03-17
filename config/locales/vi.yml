@@ -38,11 +38,15 @@ vi:
     activate_success: "Kích hoạt tài khoản thành công"
     activate_error: "Đường dẫn kích hoạt không hợp lệ"
     account_not_activated: "Tài khoản chưa được kích hoạt. Kiểm tra email của bạn để biết liên kết kích hoạt."
+    password_reset_message: "Đã gửi email kèm theo hướng dẫn đặt lại mật khẩu"
+    password_reset_success: "Mật khẩu đã được đặt lại."
+    password_reset_expired: "Đặt lại mật khẩu đã hết hạn."
+    not_found_email: "Không tìm thấy địa chỉ email"
   form:
     user:
       name: "Tên"
       email: "Email"
-      password: "Mật Khẩu"
+      password: "Mật khẩu"
       password_confirmation: "Xác nhận mật khẩu"
     submit: "Tạo tài khoản"
   users_page:
@@ -57,17 +61,31 @@ vi:
   error:
     one: "Form này có chứa 1 lỗi"
     other: "Form này có chứa %{count} lỗi"
+  password_blank: "Mật khẩu không được để trống"
   log_in_page:
     title: "Đăng nhập"
     new_user?: "Chưa có tài khoản?"
     remember_me: Nhớ tài khoản trên máy tính này?
+    forgot_password: "Quên mật khẩu?"
   will_paginate:
     previous: "<"
     next: ">"
   email:
-    title: "Kích hoạt tài khoản"
-    hi: "Chào bạn"
-    to: "to@example.org"
-    message: "Sample App"
-    content: "Chào mừng bạn đến với Sample App! Nhấp vào liên kết dưới đây để kích hoạt tài khoản của bạn:"
+    hi: "Chào"
+    activation_title: "Kích hoạt tài khoản"
+    password_reset_title: "Đặt lại mật khẩu"
+    activation_message: "Sample App"
+    password_reset_message: "Đặt lại mật khẩu"
+    activation_content: "Chào mừng bạn đến với Sample App! Nhấp vào liên kết bên dưới để kích hoạt tài khoản của bạn:"
+    password_reset_content1: "Để đặt lại mật khẩu của bạn, hãy nhấp vào liên kết bên dưới:"
+    password_reset_content2: "Liên kết này sẽ hết hạn sau hai giờ. Nếu bạn không yêu cầu đặt lại mật khẩu của mình,
+                              vui lòng bỏ qua email này và mật khẩu của bạn sẽ được giữ nguyên."
     activate: "Kích hoạt"
+    reset_password: "Đặt lại mật khẩu"
+  password_reset_page:
+    forgot:
+      title: "Quên mật khẩu"
+      submit: "Xác nhận"
+    reset:
+      title: "Đặt lại mật khẩu"
+      submit: "Cập nhật mật khẩu"
