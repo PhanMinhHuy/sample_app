@@ -18,3 +18,4 @@ micropost:
     length: 500
 gravatar_size_default: 100
 gravatar_size_user: 70
+gravatar_size_follow: 30

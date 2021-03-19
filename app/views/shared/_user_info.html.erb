@@ -1,4 +1,5 @@
-<%= link_to gravatar_for(current_user, size: Settings.gravatar_size_user), current_user %>
-<h1><%= current_user.name %></h1>
-<span><%= link_to t("link_profile"), current_user %></span>
-<span><%= t "micropost.count", count: current_user.microposts.count %></span>
+<% @user ||= current_user %>
+<%= link_to gravatar_for(@user, size: Settings.gravatar_size_user), @user %>
+<h1><%= @user.name %></h1>
+<span><%= link_to t("link_profile"), @user %></span>
+<span><%= t "micropost.count", count: @user.microposts.count %></span>

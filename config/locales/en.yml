@@ -47,6 +47,7 @@ en:
     delete_micropost_success: "Micropost deleted"
     delete_micropost_error: "Can't micropost"
     can't_delete_micropost: "You can't delete that micropost"
+    not_found_relationship: "Not found relationship"
   form:
     user:
       name: "Name"
@@ -56,6 +57,10 @@ en:
     submit: "Create my account"
   users_page:
     title: "All users"
+    followers: "Followers"
+    following: "Following"
+    follow: "Follow"
+    unfollow: "Unfollow"
   edit_page:
     title: "Edit"
     submit_save: "Save changes"
