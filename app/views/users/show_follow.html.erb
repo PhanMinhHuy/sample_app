@@ -1,4 +1,4 @@
-<% provide(:title, @user.name) %>
+<% provide(:title, @title) %>
 <div class="row">
   <aside class="col-md-4">
     <section class="user_info">
@@ -6,15 +6,21 @@
     </section>
     <section class="stats">
       <%= render "shared/stats" %>
+      <% if @users.any? %>
+        <div class="user_avatars">
+          <% @users.each do |user| %>
+            <%= link_to gravatar_for(user, size: Settings.gravatar_size_follow), user %>
+          <% end %>
+        </div>
+      <% end %>
     </section>
   </aside>
   <div class="col-md-8">
-    <%= render "follow_form" if logged_in? %>
-    <% if @user.microposts.any? %>
-      <h3><%= t "micropost.count", count: current_user.microposts.count %></h3>
-      <ol class="microposts">
-        <%= render @microposts %>
-      </ol>
+    <h3><%= @title %></h3>
+    <% if @users.any? %>
+      <ul class="users follow">
+        <%= render @users %>
+      </ul>
       <%= will_paginate @microposts, previous_label: t("will_paginate.previous"), next_label: t("will_paginate.next") %>
     <% end %>
   </div>

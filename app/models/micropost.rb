@@ -12,6 +12,7 @@ class Micropost < ApplicationRecord
                                   size: Settings.micropost.image.max_size)}
   has_one_attached :image
   scope :by_created_at, ->{order(created_at: :desc)}
+  scope :load_feed, ->(user_ids){where("user_id IN (?)", user_ids)}
 
   def display_image
     image.variant resize_to_limit: [Settings.micropost.image.height,

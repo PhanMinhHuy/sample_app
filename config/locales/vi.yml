@@ -46,6 +46,7 @@ vi:
     delete_micropost_success: "Xóa mẫu tin thành công"
     delete_micropost_error: "Không thể xóa mẫu tin"
     can't_delete_micropost: "Bạn không thể xóa mẫu tin đó"
+    not_found_relationship: "Không tìm thấy mối quan hệ"
   form:
     user:
       name: "Tên"
@@ -55,6 +56,10 @@ vi:
     submit: "Tạo tài khoản"
   users_page:
     title: "Danh sách tài khoản"
+    followers: "Người theo dõi"
+    following: "Đang theo dõi"
+    follow: "Theo dõi"
+    unfollow: "Hủy theo dõi"
   edit_page:
     title: "Chỉnh sửa"
     submit_save: "Lưu thay đổi"
