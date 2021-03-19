@@ -1,15 +1,16 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, except: [:new, :create]
-  before_action :load_user, except: [:index, :new, :create]
-  before_action :correct_user, only: [:edit, :update]
+  before_action :logged_in_user, except: %i(new create)
+  before_action :load_user, except: %i(index new create)
+  before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
 
   def index
-    @users = User.where_activated.paginate(page: params[:page],
-      per_page: params[:per_page] || Settings.user.page.limit)
+    @users = paginate User.where_activated.by_created_at
   end
 
-  def show; end
+  def show
+    @microposts = paginate @user.microposts.by_created_at
+  end
 
   def new
     @user = User.new
@@ -59,15 +60,6 @@ class UsersController < ApplicationController
 
     flash[:danger] = t "flash.not_found_user"
     redirect_to new_user_path
-  end
-
-  # Confirms a logged-in user.
-  def logged_in_user
-    return if logged_in?
-
-    store_location
-    flash[:danger] = t "flash.please_log_in"
-    redirect_to login_path
   end
 
   # Confirms the correct user.

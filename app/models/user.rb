@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   attr_accessor :remember_token, :activation_token, :reset_token
+  has_many :microposts, dependent: :destroy
   validates :name, presence: true,
                    length: {maximum: Settings.user.name.max_length}
   validates :email, presence: true,
@@ -13,6 +14,7 @@ class User < ApplicationRecord
   before_create :create_activation_digest
   has_secure_password
   scope :where_activated, ->{where(activated: true)}
+  scope :by_created_at, ->{order(created_at: :desc)}
 
   class << self
     # Returns the hash digest of the given string.
@@ -74,6 +76,10 @@ class User < ApplicationRecord
   # Returns true if a password reset has expired.
   def password_reset_expired?
     reset_sent_at < Settings.user.password_reset_time.hours.ago
+  end
+
+  def feed
+    microposts
   end
 
   private

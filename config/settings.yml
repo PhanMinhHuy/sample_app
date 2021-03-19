@@ -9,5 +9,12 @@ user:
   password_reset_time: 2
   page:
     limit: 20
+micropost:
+  content:
+    max_length: 140
+  image:
+    max_size: 5
+    height: 400
+    length: 500
 gravatar_size_default: 100
 gravatar_size_user: 70
